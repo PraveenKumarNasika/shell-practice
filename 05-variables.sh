@@ -1,6 +1,6 @@
 #!/bin/bash
 
-satrt_date=$(date +%s)
+start_date=$(date +%s)
 
 sleep 10
 
