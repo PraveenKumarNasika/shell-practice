@@ -19,7 +19,7 @@ validate(){
 
 for instance in $@
     do
-        dnf list installed nginx
+        dnf list installed $instance
     if [ $? -eq 0 ]; then
         echo "$instance is already installed...skipping" | tee -a $LOGS_FILE
     else
