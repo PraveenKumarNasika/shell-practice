@@ -9,9 +9,9 @@ fi
 
 validate(){
     if [ $2 -eq 0 ]; then 
-            echo "$2 is successfully installed"
+            echo "$1 is successfully installed"
         else 
-            echo "$2 installation is failed"
+            echo "$1 installation is failed"
         fi
 }
 
