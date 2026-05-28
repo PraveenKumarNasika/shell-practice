@@ -7,7 +7,7 @@ if [ $USERID -ne 0 ]; then
     exit 1
 fi
 
-dnf list available nginx
+dnf list installed nginx
     if [ $? -eq 0 ]; then
         echo "nginx is already installed...skipping"
     else
