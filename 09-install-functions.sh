@@ -24,3 +24,13 @@ dnf list installed nginx
         dnf install nginx -y
         validate nginx $?
     fi
+
+dnf list installed mysql
+    if [ $? -eq 0 ]; then
+        echo "mysql is already installed...skipping"
+    else
+        echo "mysql is going to install"
+        dnf install mysql -y
+        validate mysql $?
+    fi
+
