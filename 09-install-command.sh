@@ -14,7 +14,7 @@ dnf list avaailable nginx
         dnf install nginx -y
         if [ $? -eq 0 ]; then 
             echo "nginx is successfully installed"
-        then 
+        else 
             echo "nginx installation is failed"
         fi
     fi
