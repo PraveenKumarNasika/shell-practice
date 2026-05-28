@@ -19,4 +19,3 @@ dnf list available nginx
             echo "nginx installation is failed"
         fi
     fi
-fi
